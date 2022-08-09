@@ -1,3 +1,6 @@
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # Prerequisites
 *.d
 
@@ -14,7 +17,6 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod

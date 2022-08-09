@@ -1,0 +1,4 @@
+﻿  GameLoop.cpp
+  main.cpp
+D:\Documents\GitHub\CppGame\CppGame\Header\GameLoop.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Documents\GitHub\CppGame\CppGame\Source\main.cpp(16,3): error C3861: 'SDL_Delay': identifier not found
