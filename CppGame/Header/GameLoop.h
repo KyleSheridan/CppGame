@@ -3,6 +3,8 @@
 #include <SDL.h>
 #include <iostream>
 
+#include "TestScene.h"
+
 class GameLoop {
 public:
 	//constructor
@@ -19,5 +21,10 @@ public:
 	void clear();
 
 private:
+	SDL_Window* window;
+	SDL_Renderer* renderer;
 
+	//SDL_Event e;
+
+	TestScene* test;
 };
