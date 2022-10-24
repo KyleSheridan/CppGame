@@ -5,6 +5,7 @@
 
 #include "TestScene.h"
 #include "Renderer.h"
+#include "SceneManager.h"
 
 class GameLoop {
 public:
@@ -18,9 +19,7 @@ public:
 	void clear();
 
 private:
-	SDL_Window* window;
-
 	//SDL_Event e;
 
-	TestScene* test;
+	SceneManager* sceneManager;
 };

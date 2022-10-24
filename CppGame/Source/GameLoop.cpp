@@ -8,8 +8,8 @@ bool GameLoop::init()
 {
 	bool renderer = Renderer::InitializeRenderer();
 
-	test = new TestScene();
-	test->init();
+	sceneManager = new SceneManager(new TestScene());
+	sceneManager->init();
 
 	return renderer;
 }
@@ -18,26 +18,30 @@ bool GameLoop::input()
 {
 	bool running;
 
-	running = test->input();
+	running = sceneManager->input();
 
 	return running;
 }
 
 void GameLoop::update()
 {
-	test->update();
+	sceneManager->update();
 }
 
 void GameLoop::draw()
 {
 	SDL_RenderClear(Renderer::GetRenderer());
 
-	test->draw();
+	sceneManager->draw();
 
 	SDL_RenderPresent(Renderer::GetRenderer());
 }
 
 void GameLoop::clear()
 {
-	test->clear();
+	sceneManager->clear();
+	if (sceneManager) {
+		delete sceneManager;
+		sceneManager = nullptr;
+	}
 }
