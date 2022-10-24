@@ -166,13 +166,16 @@
     <ClCompile Include="Source\Background.cpp" />
     <ClCompile Include="Source\GameLoop.cpp" />
     <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Renderer.cpp" />
     <ClCompile Include="Source\TestScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Background.h" />
     <ClInclude Include="Header\GameLoop.h" />
+    <ClInclude Include="Header\Renderer.h" />
     <ClInclude Include="Header\Scene.h" />
     <ClInclude Include="Header\TestScene.h" />
+    <ClInclude Include="Renderer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

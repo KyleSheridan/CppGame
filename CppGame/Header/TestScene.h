@@ -5,7 +5,7 @@
 
 class TestScene : public Scene {
 public:
-	TestScene(SDL_Renderer* renderer) : Scene(renderer) {};
+	TestScene() {};
 
 	void init() override;
 	bool input() override;

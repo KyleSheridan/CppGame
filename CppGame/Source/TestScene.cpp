@@ -2,7 +2,7 @@
 
 void TestScene::init()
 {
-	background = new Background(this->renderer);
+	background = new Background();
 	background->init();
 }
 

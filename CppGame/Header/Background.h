@@ -3,9 +3,11 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
+#include "Renderer.h"
+
 class Background {
 public:
-	Background(SDL_Renderer* renderer) : renderer(renderer) {};
+	Background() {};
 
 	void init();
 	void update();
@@ -13,7 +15,6 @@ public:
 	void clear();
 
 private:
-	SDL_Renderer* renderer;
 	SDL_Texture* texture;
 
 	SDL_Rect position;

@@ -1,2 +1,5 @@
-﻿  TestScene.cpp
+﻿  GameLoop.cpp
+  main.cpp
+  TestScene.cpp
+  Generating Code...
   CppGame.vcxproj -> D:\Documents\GitHub\CppGame\Build\x86\Debug\CppGame.exe
