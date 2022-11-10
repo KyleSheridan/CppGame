@@ -10,6 +10,12 @@ set(SDL2_LIBRARIES "${PROJECT_SOURCE_DIR}/Library/SDL2-2.0.12/lib/x64/SDL2.lib")
 include_directories(${PROJECT_SOURCE_DIR}/Library/SDL2_image-2.0.5/include)
 set(SDL2_IMAGE_LIBRARIES "${PROJECT_SOURCE_DIR}/Library/SDL2_image-2.0.5/lib/x64/SDL2_image.lib")
 
+file(GLOB DLLS "DLLs/x64/*.dll")
+file(COPY ${DLLS} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/build/Release)
+file(COPY ${DLLS} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/build/Debug)
+file(COPY ${DLLS} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/build/MinSizeRel)
+file(COPY ${DLLS} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/build/RelWithDebInfo)
+
 add_executable(CppGame ${SOURCE})
 
 target_link_libraries(CppGame ${SDL2_IMAGE_LIBRARIES})
