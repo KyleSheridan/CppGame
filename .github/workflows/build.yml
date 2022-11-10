@@ -16,6 +16,12 @@ jobs:
             config: Release,
             args: -G "Visual Studio 17 2022" -A x64,
           }
+          - {
+            name: "Windows/X64/Debug",
+            os: windows-latest,
+            config: Debug,
+            args: -G "Visual Studio 17 2022" -A x64,
+          }
     steps:
       - uses: actions/checkout@v3
       - name: Create Work Dirs
